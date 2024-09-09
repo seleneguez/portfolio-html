@@ -1,0 +1,14 @@
+h1 {
+    color: rgb(193, 48, 198);
+    
+  }
+img {
+    width: 200px;
+}
+table { 
+    align-content:center;
+    border: 4;
+}
+#experiencia{
+    background-color: rgb(255, 207, 202);
+}
