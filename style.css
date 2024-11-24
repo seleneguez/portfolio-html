@@ -1,3 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=WindSong:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&family=Satisfy&display=swap");
+body {
+  margin: 0;
+
+  background: linear-gradient(to right, #fcc2a0, #cbffe7);
+}
+nav {
+  background-color: #050104;
+  font-weight: bolder;
+}
+.navbar-toggler {
+  border-color: rgb(255, 248, 237);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='-10 -1 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon {
+  color: rgb(255, 255, 255);
+}
+.nombre {
+  font-family: "WindSong", cursive;
+  font-weight: bolder;
+}
+h3 {
+    font-family: "Satisfy", cursive;
+    font-weight: bolder;
+    font-size: 4em;
+  }
+  
+  .font {
+    font-family: "Reem Kufi Fun", sans-serif;
+  }
+  
+  
+  /*/ /* Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) {
+    .p {
+      padding: 20px;
+      color: rgb(3, 3, 3);
+    }
+  }
+  
+  /*/ Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) {
+    .p {
+      padding: 25px;
+      font-size: 24px;
+      color: rgb(3, 3, 3);
+      font-family: "Reem Kufi Fun", sans-serif;
+    }
+  }
+  
+  /*// Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) {
+  }
+  
+  /*// X-Large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+  }
+  
+  /*// XX-Large devices (larger desktops, 1400px and up)*/
+  @media (min-width: 1400px) {
+  }
+  
+  .nombre,
+  .nav-link {
+    color: blanchedalmond;
+  }
+  .nombre:hover,
+  .nav-link:hover {
+    color: rgb(255, 106, 243);
+    font-weight: bolder;
+  }
+  .fotoport {
+    width: 16rem;
+    height: 17rem;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+  }
+  .img {
+    width: 200px;
+    height: 290px;
+    border-radius: 16px;
+  
+   
+    box-shadow: 2px 2px 5px #999;
+    transition: transform 0.2s;
+  }
+  .img:hover {
+    transform: scale(1.1);
+  }
+  
+  .proyect {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  footer {
+    
+    background: black;
+    padding: 20px 0;
+    color: aliceblue;
+    margin-top: 20px;
+  }
+  .sep {
+    padding: 45px;
+  }
+  .social a {
+    font-size: 30px;
+    margin: 8px;
+    color: black;
+  }
+  .boton {
+    
+    font-family: "Reem Kufi Fun", sans-serif;
+    background: linear-gradient(to right, #ff8bb2, #ffaa71);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    background-color: #000000;
+  }
+  
+
+
 h1 {
     color: rgb(193, 48, 198);
     
@@ -11,4 +146,10 @@ table {
 }
 #experiencia{
     background-color: rgb(255, 207, 202);
+}
+body{
+    background-image: url("./img/fondoportfolio.img");
+    background-size: cover; 
+    background-position: center; 
+    /*background-repeat: no-repeat; */
 }

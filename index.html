@@ -1,45 +1,161 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es"></html>
 <head>
-    <meta charset="UTF-8" />
-
-    <link rel="stylesheet" href="./style.css" />
-    <title>Mi portfolio</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/letra-s (1).png">
 </head>
 
 <body>
-    <h1>Selene Rodriguez</h1>
-    <p>Desarrollador de softfware</p>
-    <a>
+  <nav class="navbar navbar-expand-lg  fixed-top mb-5">
+    <div class="container">
+      <a class="navbar-brand nombre" href="#">Selene </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#Portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#Aboutme">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5 text-center">
+    <img class="fotoport  " src="img/image.jpeg" alt="">
+    <h3>Selene Natali Rodriguez</h3>
+    <p class=" p">FrontEnd Developer</p>
+  </div>
+  <div class="container mt-3 ">
+    <div class="mt-5 text-center " id="Portfolio">
+      <h2 class="font">Proyectos</h2>
+      <hr>
+      <div class="row proyect">
+        <div class="col-12 col-md-3 col-lg-3">
+          <a href="file:///Users/selenerodriguez/Documents/Projects/todo/recetas-01/index.html" target="_blank"> <img class="img"
+              src="img/recetaspagina.png" alt="">
+          </a>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+          <a href="https://dc0f297b-2ca7-48e0-90ad-2fe28f36d3d4-00-pvi9clpqeckq.janeway.replit.dev/" target="_blank"> <img class="img "
+              src="img/bosstra.png" alt="">
+          </a>
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+          <a href="https://seleneguez.github.io/panchito/" target="_blank"><img class="img" src="img/panch.png"
+              alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center mt-5" id="Aboutme">
+    <h2 class="font">Sobre mi</h2>
+    <hr>
+    <p class=" p mt-5 ">
+      Tengo 25 años, soy de Buenos Aires, CABA.
+      Mi camino en el mundo IT comenzo durante la pandemia,
+      Actualmente estudio la Tecnicatura superior en desarrollo de Software , empezando con mis primeros programas
+      con C++, js, html.
+      Tambien realice un curso de Desarrolador web Full Stack en Codo a codo.
+      Dentro de mi trayectoria puedo destacar mi buena presencia y junto con las experiencias adquiridas en diversas
+      areas, considero
+      mi dinamismo, proactividad y dedicacion. Busco incrementar nuevas habilidades y experiencia, del mismo modo,
+      ampliar mi nivel tanto laboral
+      como academico.
 
+    </p>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center text-center mt-5">
+      <h2 class="font">Contacto</h2>
+      <hr>
+      <div class="col-lg-8 col-xl-7 sep">
+        <form id="contacto">
+          <!-- Nombre input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="name" type="text" placeholder="Introdusca su nombre..." required />
+            <label for="name">Nombre completo</label>
+            <div> </div>
+          </div>
+          <!-- direccion de mail input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+            <label for="email">Correo electronico</label>
+            <div></div>
+          </div>
+          <!-- Numero del tel input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" required>
+            <label for="phone">Numero de telefono</label>
+          </div>
+          <!-- Mensaje input-->
+          <div class="form-floating mb-3">
+            <textarea class="form-control" id="message" type="text" placeholder="Ingrese su mensaje aqui..."
+              style="height: 10rem" required></textarea>
+            <label for="message">Mensaje</label>
+          </div>
+          <!-- Mensaje de exito-->
+          <!-- -mensaje que vas a ver si el formulario se envio con exito-->
+          <div class="d-none">
+            <div class="text-center mb-3">
+              <div class="fw-bolder">Se envio con exito!</div>
+              <br />
+            </div>
+          </div>
+          <!--mensaje de error-->
+          <!---->
+          <!-- Esto es lo que vas a ver si hay un error cojn el envio del form-->
+          <div class="d-none">
+            <div class="text-center text-danger mb-3">Error al enviar mensaje!</div>
+          </div>
+          <!-- Boton de enviar-->
+          <button type="submit" class="btn boton">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-6 text-start">
+        <ul class="list-unstyled">
+          <li>CABA, Buenos Aires.</li>
+          <li>selenerodrigueznatali2@gmail.com</li>
+        </ul>
+      </div>
+      <div class="social col-6  text-end ">
+        <a href="https://wa.me/+5491157633538" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/selene-rodriguez-b14a03236/" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/seleneguez" target="_blank"> <i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2022 Selene Rodriguez</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
-        <img src="./image.jpeg">
-
-        <table>
-            <tr>
-                <th> Tecnologias </th>
-
-                <th id="experiencia"> Experiencia </th>
-            </tr>
-            <tr>
-                <td>Html</td>
-                <td id="experiencia">Trainee</td>
-            </tr>
-            <tr>
-                <td>Css</td>
-                <td id="experiencia">Trainee</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td id="experiencia">Trainee</td>
-            </tr>
-        </table>
-
-        <!-- Formulario sencillo HTML sin funcionalidad.
- Con campos nombre, apellido, email, telefono y un boton submit de enviar -->
-        <form>
 </body>
 
 </html>
